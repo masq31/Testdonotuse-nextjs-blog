@@ -1,0 +1,9 @@
+#Plugging into next.js test API
+type IO {
+    hello: String!
+}
+
+type Query {
+    helloWorld: [IO]
+        @rest(endpoint: "$(PATH)/api/hello?")
+}
