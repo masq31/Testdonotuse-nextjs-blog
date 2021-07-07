@@ -1,3 +1,5 @@
+# HOST AT PORT 3000 IN DOCKERIMAGE
+
 # Template adapted to NPM from:
 # https://github.com/vercel/next.js/blob/canary/examples/with-docker/Dockerfile
 
