@@ -1,7 +1,7 @@
 #Plugging into next.js test API
 type IO {
     ID: ID!
-    hello: String!
+    Name: String!
     Image: String
     Date: Date!
     Past: 
@@ -13,7 +13,7 @@ type Query {
         @rest(
             endpoint: "127.0.0.1:3000/api/hello"
             setters: [
-                { field: Image", path: "Image.URL" }
+                { field: "Image", path: "Image.URL" }
             ]
         )
         
