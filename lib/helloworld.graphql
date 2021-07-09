@@ -1,9 +1,10 @@
 #Plugging into next.js test API
 type IO {
+    ID: ID!
     hello: String!
-    Image: <img src=URL/>
-    Date: String!
-    Past: String!
+    Image: String
+    Date: Date!
+    Past: 
 }
 
 # Change localhost to dynamic path regex or next function
