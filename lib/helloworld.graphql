@@ -1,9 +1,19 @@
 #Plugging into next.js test API
 type IO {
     hello: String!
+    Image: <img src=URL/>
+    Date: String!
+    Past: String!
 }
 
+# Change localhost to dynamic path regex or next function
 type Query {
     helloWorld: [IO]
-        @rest(endpoint: "$(PATH)/api/hello?")
+        @rest(
+            endpoint: "127.0.0.1:3000/api/hello"
+            setters: [
+                { field: Image", path: "Image.URL" }
+            ]
+        )
+        
 }
