@@ -12,7 +12,7 @@ export default function Home( { toJSON } ) {
 }
 
 export const getStaticProps = async () => {
-    const res = await fetch('localhost:3000/api/hello');
+    const res = await fetch('https://localhost:3000/api/hello');
     const toJSON = await res.json();
 
     //if fetch(res.status(404)) return {}
