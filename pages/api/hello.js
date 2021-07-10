@@ -13,8 +13,6 @@ export default function handler (req, res) {
                 }
               )
             }
-        else {null
+        else {res.code(404), null
         }
-      
-
 }
